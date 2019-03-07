@@ -1,0 +1,24 @@
+---
+things:
+    - thing2
+    - thing3
+
+cheese:
+    - eggs
+    - ham
+
+things2:
+    banana:
+      - "{{ things }}"
+
+otherthings: "{{ things }}"
+
+otherotherthings: "{{ otherthings + cheese }}"
+
+things3: "{{ things2 }}"
+
+spoons:
+  - forks: "{{ things }}"
+    knifes: "blade"
+  - whisks: "ballon"
+    ladel: "bowl"
